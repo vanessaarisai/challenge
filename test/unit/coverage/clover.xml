@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1583871626812" clover="3.2.0">
-  <project timestamp="1583871626812" name="All files">
-    <metrics statements="42" coveredstatements="34" conditionals="18" coveredconditionals="13" methods="14" coveredmethods="11" elements="74" coveredelements="58" complexity="0" loc="42" ncloc="42" packages="2" files="3" classes="3">
+<coverage generated="1583906805727" clover="3.2.0">
+  <project timestamp="1583906805727" name="All files">
+    <metrics statements="42" coveredstatements="37" conditionals="18" coveredconditionals="13" methods="14" coveredmethods="12" elements="74" coveredelements="62" complexity="0" loc="42" ncloc="42" packages="2" files="3" classes="3">
       <package name="src">
-        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <file name="App.vue" path="/Users/vanessacruz/Documents/workspace/Vouch/vouch/src/App.vue">
-          <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="18" count="0" type="stmt"/>
-          <line num="19" count="0" type="stmt"/>
-          <line num="27" count="0" type="stmt"/>
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <file name="App.vue" path="/Users/vanessacruz/Documents/workspace/Vouch/challenge/src/App.vue">
+          <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="18" count="1" type="stmt"/>
+          <line num="19" count="1" type="stmt"/>
+          <line num="27" count="1" type="stmt"/>
         </file>
       </package>
       <package name="src.components">
         <metrics statements="39" coveredstatements="34" conditionals="18" coveredconditionals="13" methods="13" coveredmethods="11"/>
-        <file name="FlashCard.vue" path="/Users/vanessacruz/Documents/workspace/Vouch/vouch/src/components/FlashCard.vue">
+        <file name="FlashCard.vue" path="/Users/vanessacruz/Documents/workspace/Vouch/challenge/src/components/FlashCard.vue">
           <metrics statements="20" coveredstatements="16" conditionals="6" coveredconditionals="4" methods="6" coveredmethods="5"/>
           <line num="28" count="1" type="stmt"/>
           <line num="35" count="0" type="stmt"/>
@@ -36,7 +36,7 @@
           <line num="88" count="0" type="stmt"/>
           <line num="89" count="0" type="stmt"/>
         </file>
-        <file name="TriviaGame.vue" path="/Users/vanessacruz/Documents/workspace/Vouch/vouch/src/components/TriviaGame.vue">
+        <file name="TriviaGame.vue" path="/Users/vanessacruz/Documents/workspace/Vouch/challenge/src/components/TriviaGame.vue">
           <metrics statements="19" coveredstatements="18" conditionals="12" coveredconditionals="9" methods="7" coveredmethods="6"/>
           <line num="25" count="2" type="stmt"/>
           <line num="34" count="0" type="stmt"/>
