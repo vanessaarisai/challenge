@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for assets/text2json.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">assets</a> text2json.js
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* 
+Iterate through Insurance-Terms.txt, which contains several insurance terms and their meanings, 
+to create a JSON object, inside of termsJSON.json, that can be used in the coding challenge.
+&nbsp;
+It will also create a text file, termOptions.txt, with all the terms (acceptable solutions).
+&nbsp;
+Terms are from: https://content.naic.org/consumer_glossary.htm
+*/
+const fs = <span class="cstat-no" title="statement not covered" >require('fs') </span>
+var file = <span class="cstat-no" title="statement not covered" >'Insurance-Terms.txt'</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >fs.readFile(file, <span class="fstat-no" title="function not covered" >(</span>err, data) =&gt; { </span>
+<span class="cstat-no" title="statement not covered" >    if (err) <span class="cstat-no" title="statement not covered" >t</span>hrow err </span>
+    var termsData = <span class="cstat-no" title="statement not covered" >{}</span>
+    var termSolutions = <span class="cstat-no" title="statement not covered" >''</span>
+<span class="cstat-no" title="statement not covered" >    data.toString().split("\n").forEach(<span class="fstat-no" title="function not covered" >function(</span>line, index, arr) {</span>
+<span class="cstat-no" title="statement not covered" >        if (index === arr.length - 1 &amp;&amp; line === "") { </span>
+<span class="cstat-no" title="statement not covered" >            return; </span>
+        }
+        //separate term and meaning by '-'
+        var linesSpace = <span class="cstat-no" title="statement not covered" >line.split('-')</span>
+&nbsp;
+        var solTerms = <span class="cstat-no" title="statement not covered" >linesSpace[0]</span>
+&nbsp;
+        var term = <span class="cstat-no" title="statement not covered" >{</span>
+        term: linesSpace[0].replace(/\s+$/g, ''),
+        meaning: linesSpace[1],
+        };  
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        termsData[index] = term</span>
+<span class="cstat-no" title="statement not covered" >        termSolutions += solTerms + '\n'</span>
+    });
+    var termsJSON = <span class="cstat-no" title="statement not covered" >JSON.stringify(termsData)</span>
+<span class="cstat-no" title="statement not covered" >    fs.writeFile('./termsJSON.json', termsJSON, <span class="fstat-no" title="function not covered" >() =&gt; </span>{})</span>
+<span class="cstat-no" title="statement not covered" >    fs.writeFile('./termOptions.txt', termSolutions, <span class="fstat-no" title="function not covered" >() =&gt; </span>{})</span>
+}) 
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Mar 03 2020 14:28:06 GMT-0800 (Pacific Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

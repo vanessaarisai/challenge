@@ -1,0 +1,22 @@
+{
+    "0":
+    {
+        "term":"Accident",
+        "meaning":" an unexpected event or circumstance without deliberate intent."
+    },
+    "1":
+    {
+        "term":"Accident Insurance",
+        "meaning":" insurance for unforeseen bodily injury."
+    },
+    "2":
+    {
+        "term":"Accident Only",
+        "meaning":" an insurance contract that provides coverage, singly or in combination, for death, dismemberment, disability, or hospital and medical care caused by or necessitated as a result of accident or specified kinds of accident."
+    },
+    "3":
+    {
+        "term":"Accident Only or AD&D",
+        "meaning":" policies providing coverage, singly or in combination, for death, dismemberment, disability, or hospital and medical care caused by or necessitated as a result of accident or specified kinds of accidents. Types of coverage include student accident, sports accident, travel accident, blanket accident, specific accident or accidental death and dismemberment (AD&D)."
+    }
+}
