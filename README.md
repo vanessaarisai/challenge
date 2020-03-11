@@ -2,7 +2,13 @@
 The insurance agents of Vouch are entered in an insurance trivial competition with many other insurance companies. To help us retain the trivia championship trophy, you have been tasked with building a flashcard web application to help our agents remember common insurance terms.
 
 ## Project Info
-You can update the JSON file with the terms and term meanings with your own file. Simply make sure that the data is in the following format:
+Vouch Trivia is a game that helps you put your knowledge to the test. Each game consists of 10 random insurance terms. It displays an insurance term definition and you have to type in the term that goes with said definition. 
+- If you don't know the answer, you can choose to see the correct answer. 
+- If your answer is wrong, you'll have the opportunity to see the correct answer before moving forward to the next definition.
+- At the end of the game, you'll see your score and you can choose to start a new game with a new set of random terms.
+
+
+Terms come from a JSON file that can be found in /src/assets.You can update the JSON file with the terms and term meanings with your own file. Simply make sure that the data is in the following format:
 
 <code>
 {
